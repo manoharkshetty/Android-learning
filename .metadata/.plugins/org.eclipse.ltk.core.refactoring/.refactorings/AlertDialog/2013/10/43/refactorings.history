@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extracts string &apos;Button&apos; into R.string.button" description="Extracts string &apos;Button&apos; into R.string.button" file="/AlertDialog/res/layout/activity_main.xml" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="EDIT_SOURCE" proj="/AlertDialog" rplc-all-java="false" rplc-all-xml="false" sel-end="763" sel-start="743" stamp="1382347204747" tok-esc="Button" xml-attr-name="android:text"/>
+</session>
