@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.training.helloworld.R.id"/>
-<fullyQualifiedTypeName name="android.widget.EditText"/>
 <fullyQualifiedTypeName name="com.training.helloworld.second"/>
 <fullyQualifiedTypeName name="com.training.helloworld.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
@@ -26,8 +25,25 @@
 <fullyQualifiedTypeName name="com.example.blog.R.id"/>
 <fullyQualifiedTypeName name="com.loopj.android.http.AsyncHttpResponseHandler"/>
 <fullyQualifiedTypeName name="com.loopj.android.http.JsonHttpResponseHandler"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="com.example.tween.R.id"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.view.animation.AnimationUtils"/>
+<fullyQualifiedTypeName name="com.example.alertdialog.R.id"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog"/>
+<fullyQualifiedTypeName name="android.app.ProgressDialog"/>
+<fullyQualifiedTypeName name="com.example.progressdialog.R.id"/>
+<fullyQualifiedTypeName name="com.example.customdialog.R.id"/>
+<fullyQualifiedTypeName name="android.app.Dialog"/>
+<fullyQualifiedTypeName name="com.example.customdialog.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.example.audio.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.provider.MediaStore.Audio.Media"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="com.example.audio.MainActivity"/>
+<fullyQualifiedTypeName name="com.example.prefernces.R.id"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences.Editor"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
 </qualifiedTypeNameHistroy>

@@ -1509,3 +1509,12 @@ Binding(CTRL+SHIFT+\,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-21 15:54:37.399
+!MESSAGE Failed to load properties file for project 'CustomDialog'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-21 22:57:26.814
+!MESSAGE Failed to load properties file for project 'Audio'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-22 00:04:45.685
+!MESSAGE Failed to load properties file for project 'Prefernces'
