@@ -1,0 +1,321 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=18422, tid=3060206400
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_25-b30
+# Java VM: OpenJDK Server VM (23.7-b01 mixed mode linux-x86 )
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please include
+# instructions on how to reproduce the bug and visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-7/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0xb6506800):  JavaThread "Unknown thread" [_thread_in_vm, id=18424, stack(0xb6620000,0xb6671000)]
+
+Stack: [0xb6620000,0xb6671000]
+[error occurred during error reporting (printing stack bounds), id 0xb]
+
+
+[error occurred during error reporting (printing native stack), id 0xb]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0xb6506800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=18424, stack(0xb6620000,0xb6671000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.247 loading class 0xb6531840 done
+Event: 0.247 loading class 0xb6531180 done
+Event: 0.247 loading class 0xb6531158
+Event: 0.247 loading class 0xb65511a0
+Event: 0.276 loading class 0xb65511a0 done
+Event: 0.276 loading class 0xb65511d8
+Event: 0.276 loading class 0xb65511d8 done
+Event: 0.276 loading class 0xb6551210
+Event: 0.276 loading class 0xb6551210 done
+Event: 0.276 loading class 0xb6531158 done
+
+
+Dynamic libraries:
+08048000-08049000 r-xp 00000000 08:01 12594118   /usr/lib/jvm/java-7-openjdk-i386/jre/bin/java
+08049000-0804a000 r--p 00000000 08:01 12594118   /usr/lib/jvm/java-7-openjdk-i386/jre/bin/java
+0804a000-0804b000 rw-p 00001000 08:01 12594118   /usr/lib/jvm/java-7-openjdk-i386/jre/bin/java
+09539000-0955a000 rw-p 00000000 00:00 0          [heap]
+79c48000-79d12000 r--s 011ad000 08:01 11417517   /home/manu/android-sdks/platforms/android-18/android.jar
+79d12000-7c100000 rw-p 00000000 00:00 0 
+7c100000-7c121000 rw-p 00000000 00:00 0 
+7c121000-7c200000 ---p 00000000 00:00 0 
+7c27f000-7c280000 ---p 00000000 00:00 0 
+7c280000-7c300000 rw-p 00000000 00:00 0          [stack:18430]
+7c300000-7c321000 rw-p 00000000 00:00 0 
+7c321000-7c400000 ---p 00000000 00:00 0 
+7c439000-7c45e000 rw-p 00000000 00:00 0 
+7c45e000-7c45f000 ---p 00000000 00:00 0 
+7c45f000-7c4e7000 rw-p 00000000 00:00 0          [stack:18429]
+7c4e7000-7c51f000 rw-p 00000000 00:00 0 
+7c51f000-7c52f000 rw-p 00000000 00:00 0 
+7c52f000-7c619000 rw-p 00000000 00:00 0 
+7c619000-7c621000 rw-p 00000000 00:00 0 
+7c621000-7c659000 rw-p 00000000 00:00 0 
+7c659000-7c669000 rw-p 00000000 00:00 0 
+7c669000-7c752000 rw-p 00000000 00:00 0 
+7c752000-7c75b000 rw-p 00000000 00:00 0 
+7c75b000-7c7cf000 rw-p 00000000 00:00 0 
+7c7cf000-7d7d0000 rw-p 00000000 00:00 0 
+7d7d0000-847d0000 rw-p 00000000 00:00 0 
+847d0000-86700000 rw-p 00000000 00:00 0 
+86700000-a3a80000 rw-p 00000000 00:00 0 
+a3a80000-a4a10000 rw-p 00000000 00:00 0 
+a4a10000-b33d0000 rw-p 00000000 00:00 0 
+b33dc000-b33e5000 rw-p 00000000 00:00 0 
+b33e5000-b349c000 rw-p 00000000 00:00 0 
+b349c000-b36dc000 rwxp 00000000 00:00 0 
+b36dc000-b649c000 rw-p 00000000 00:00 0 
+b649c000-b64a7000 r-xp 00000000 08:01 9307022    /lib/i386-linux-gnu/libnss_files-2.17.so
+b64a7000-b64a8000 r--p 0000a000 08:01 9307022    /lib/i386-linux-gnu/libnss_files-2.17.so
+b64a8000-b64a9000 rw-p 0000b000 08:01 9307022    /lib/i386-linux-gnu/libnss_files-2.17.so
+b64a9000-b64b3000 r-xp 00000000 08:01 9307026    /lib/i386-linux-gnu/libnss_nis-2.17.so
+b64b3000-b64b4000 r--p 00009000 08:01 9307026    /lib/i386-linux-gnu/libnss_nis-2.17.so
+b64b4000-b64b5000 rw-p 0000a000 08:01 9307026    /lib/i386-linux-gnu/libnss_nis-2.17.so
+b64b5000-b64ca000 r-xp 00000000 08:01 9307016    /lib/i386-linux-gnu/libnsl-2.17.so
+b64ca000-b64cb000 r--p 00014000 08:01 9307016    /lib/i386-linux-gnu/libnsl-2.17.so
+b64cb000-b64cc000 rw-p 00015000 08:01 9307016    /lib/i386-linux-gnu/libnsl-2.17.so
+b64cc000-b64ce000 rw-p 00000000 00:00 0 
+b64ce000-b64d5000 r-xp 00000000 08:01 9307018    /lib/i386-linux-gnu/libnss_compat-2.17.so
+b64d5000-b64d6000 r--p 00006000 08:01 9307018    /lib/i386-linux-gnu/libnss_compat-2.17.so
+b64d6000-b64d7000 rw-p 00007000 08:01 9307018    /lib/i386-linux-gnu/libnss_compat-2.17.so
+b64d7000-b64fe000 r-xp 00000000 08:01 12594186   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjava.so
+b64fe000-b64ff000 r--p 00026000 08:01 12594186   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjava.so
+b64ff000-b6500000 rw-p 00027000 08:01 12594186   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjava.so
+b6500000-b655b000 rw-p 00000000 00:00 0 
+b655b000-b6600000 ---p 00000000 00:00 0 
+b6605000-b660d000 r-xp 00000000 08:01 12594160   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libzip.so
+b660d000-b660e000 r--p 00007000 08:01 12594160   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libzip.so
+b660e000-b660f000 rw-p 00008000 08:01 12594160   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libzip.so
+b660f000-b6617000 rw-s 00000000 08:01 4980822    /tmp/hsperfdata_manu/18422
+b6617000-b661e000 r-xp 00000000 08:01 9307069    /lib/i386-linux-gnu/librt-2.17.so
+b661e000-b661f000 r--p 00006000 08:01 9307069    /lib/i386-linux-gnu/librt-2.17.so
+b661f000-b6620000 rw-p 00007000 08:01 9307069    /lib/i386-linux-gnu/librt-2.17.so
+b6620000-b6623000 ---p 00000000 00:00 0 
+b6623000-b6671000 rw-p 00000000 00:00 0          [stack:18424]
+b6671000-b668c000 r-xp 00000000 08:01 9306974    /lib/i386-linux-gnu/libgcc_s.so.1
+b668c000-b668d000 r--p 0001a000 08:01 9306974    /lib/i386-linux-gnu/libgcc_s.so.1
+b668d000-b668e000 rw-p 0001b000 08:01 9306974    /lib/i386-linux-gnu/libgcc_s.so.1
+b668e000-b66cf000 r-xp 00000000 08:01 9306997    /lib/i386-linux-gnu/libm-2.17.so
+b66cf000-b66d0000 r--p 00040000 08:01 9306997    /lib/i386-linux-gnu/libm-2.17.so
+b66d0000-b66d1000 rw-p 00041000 08:01 9306997    /lib/i386-linux-gnu/libm-2.17.so
+b66d1000-b67ad000 r-xp 00000000 08:01 11540238   /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b67ad000-b67ae000 ---p 000dc000 08:01 11540238   /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b67ae000-b67b2000 r--p 000dc000 08:01 11540238   /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b67b2000-b67b3000 rw-p 000e0000 08:01 11540238   /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b67b3000-b67ba000 rw-p 00000000 00:00 0 
+b67ba000-b70ab000 r-xp 00000000 08:01 12594163   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/server/libjvm.so
+b70ab000-b70f2000 r--p 008f1000 08:01 12594163   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/server/libjvm.so
+b70f2000-b7106000 rw-p 00938000 08:01 12594163   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/server/libjvm.so
+b7106000-b7524000 rw-p 00000000 00:00 0 
+b7524000-b753b000 r-xp 00000000 08:01 9307102    /lib/i386-linux-gnu/libz.so.1.2.7
+b753b000-b753c000 r--p 00016000 08:01 9307102    /lib/i386-linux-gnu/libz.so.1.2.7
+b753c000-b753d000 rw-p 00017000 08:01 9307102    /lib/i386-linux-gnu/libz.so.1.2.7
+b753d000-b7554000 r-xp 00000000 08:01 9307061    /lib/i386-linux-gnu/libpthread-2.17.so
+b7554000-b7555000 r--p 00016000 08:01 9307061    /lib/i386-linux-gnu/libpthread-2.17.so
+b7555000-b7556000 rw-p 00017000 08:01 9307061    /lib/i386-linux-gnu/libpthread-2.17.so
+b7556000-b7558000 rw-p 00000000 00:00 0 
+b7558000-b755b000 r-xp 00000000 08:01 9306964    /lib/i386-linux-gnu/libdl-2.17.so
+b755b000-b755c000 r--p 00002000 08:01 9306964    /lib/i386-linux-gnu/libdl-2.17.so
+b755c000-b755d000 rw-p 00003000 08:01 9306964    /lib/i386-linux-gnu/libdl-2.17.so
+b755d000-b770a000 r-xp 00000000 08:01 9306949    /lib/i386-linux-gnu/libc-2.17.so
+b770a000-b770c000 r--p 001ad000 08:01 9306949    /lib/i386-linux-gnu/libc-2.17.so
+b770c000-b770d000 rw-p 001af000 08:01 9306949    /lib/i386-linux-gnu/libc-2.17.so
+b770d000-b7710000 rw-p 00000000 00:00 0 
+b7713000-b7714000 rw-p 00000000 00:00 0 
+b7714000-b7715000 r--p 00000000 00:00 0 
+b7715000-b7722000 r-xp 00000000 08:01 12594170   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libverify.so
+b7722000-b7723000 r--p 0000d000 08:01 12594170   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libverify.so
+b7723000-b7724000 rw-p 0000e000 08:01 12594170   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libverify.so
+b7724000-b7731000 r-xp 00000000 08:01 12594180   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/jli/libjli.so
+b7731000-b7732000 r--p 0000c000 08:01 12594180   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/jli/libjli.so
+b7732000-b7733000 rw-p 0000d000 08:01 12594180   /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/jli/libjli.so
+b7733000-b7736000 rw-p 00000000 00:00 0 
+b7736000-b7737000 r-xp 00000000 00:00 0          [vdso]
+b7737000-b7757000 r-xp 00000000 08:01 9306925    /lib/i386-linux-gnu/ld-2.17.so
+b7757000-b7758000 r--p 0001f000 08:01 9306925    /lib/i386-linux-gnu/ld-2.17.so
+b7758000-b7759000 rw-p 00020000 08:01 9306925    /lib/i386-linux-gnu/ld-2.17.so
+bf9bf000-bf9e0000 rw-p 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:/home/manu/android-sdks/platforms/android-18/android.jar 
+java_command: HashMaps
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+LD_LIBRARY_PATH=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/server:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-7-openjdk-i386/jre/../lib/i386:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386:
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x758d30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x758d30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x5f4230], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x5f4230], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x5f4230], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x5f4230], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x5f40e0], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGINT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGQUIT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Ubuntu 13.04 (raring)
+uname:Linux 3.8.0-19-generic #30-Ubuntu SMP Wed May 1 16:36:13 UTC 2013 i686
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 23807, NOFILE 4096, AS infinity
+load average:0.25 0.34 0.49
+
+/proc/meminfo:
+MemTotal:        3063800 kB
+MemFree:          207012 kB
+Buffers:           17132 kB
+Cached:          1119064 kB
+SwapCached:       110560 kB
+Active:          1735036 kB
+Inactive:        1024264 kB
+Active(anon):    1391580 kB
+Inactive(anon):   681740 kB
+Active(file):     343456 kB
+Inactive(file):   342524 kB
+Unevictable:          16 kB
+Mlocked:              16 kB
+HighTotal:       2192376 kB
+HighFree:          54648 kB
+LowTotal:         871424 kB
+LowFree:          152364 kB
+SwapTotal:      68358140 kB
+SwapFree:       68193000 kB
+Dirty:               272 kB
+Writeback:             0 kB
+AnonPages:       1512796 kB
+Mapped:           121432 kB
+Shmem:            450192 kB
+Slab:              46320 kB
+SReclaimable:      28216 kB
+SUnreclaim:        18104 kB
+KernelStack:        4360 kB
+PageTables:        13108 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    69890040 kB
+Committed_AS:    6087872 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       34468 kB
+VmallocChunk:      85492 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       10232 kB
+DirectMap2M:      903168 kB
+
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, tsc
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T6600  @ 2.20GHz
+stepping	: 10
+microcode	: 0xa07
+cpu MHz		: 2200.000
+cache size	: 2048 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc arch_perfmon pebs bts aperfmperf pni dtes64 monitor ds_cpl est tm2 ssse3 cx16 xtpr pdcm sse4_1 xsave lahf_lm dtherm
+bogomips	: 4389.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T6600  @ 2.20GHz
+stepping	: 10
+microcode	: 0xa07
+cpu MHz		: 1200.000
+cache size	: 2048 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc arch_perfmon pebs bts aperfmperf pni dtes64 monitor ds_cpl est tm2 ssse3 cx16 xtpr pdcm sse4_1 xsave lahf_lm dtherm
+bogomips	: 4389.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 3063800k(207012k free), swap 68358140k(68193000k free)
+
+vm_info: OpenJDK Server VM (23.7-b01) for linux-x86 JRE (1.7.0_25-b30), built on Jul  3 2013 13:58:32 by "buildd" with gcc 4.7.3
+
+time: Sun Nov  3 01:18:54 2013
+elapsed time: 0 seconds
+

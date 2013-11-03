@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import com.example.listviewsample.LazyAdapter;
+
+
+public class HashMaps {
+	public Map<Integer, LazyAdapter> leaugeData = new HashMap<Integer, LazyAdapter>();
+    
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Map<Integer, LazyAdapter> leaugeData = new HashMap<Integer, LazyAdapter>();
+		leaugeData.put(1,  new LazyAdapter("https://graph.facebook.com/11325641/picture", "Mohit Mehta", "The Bulldozers", 4));
+    	leaugeData.put(2,  new LazyAdapter("https://graph.facebook.com/11325641/picture", "Lokesh Chauhan", "The Bulldozers", 4));
+    	leaugeData.put(3,  new LazyAdapter("https://graph.facebook.com/11325641/picture", "Mohit Mehta", "The Bulldozers", 4));
+    	leaugeData.put(4,  new LazyAdapter("https://graph.facebook.com/11325641/picture", "Mohit Mehta", "The Bulldozers", 4));
+    	leaugeData.put(5,  new LazyAdapter("https://graph.facebook.com/11325641/picture", "Mohit Mehta", "The Bulldozers", 4));
+    	leaugeData.put(6,  new LazyAdapter("https://graph.facebook.com/11325641/picture", "Mohit Mehta", "The Bulldozers", 4));
+    	leaugeData.put(7,  new LazyAdapter("https://graph.facebook.com/11325641/picture", "Mohit Mehta", "The Bulldozers", 4));
+    	 
+    	System.out.println(leaugeData.get(1).getPname());
+        
+
+	}
+
+}

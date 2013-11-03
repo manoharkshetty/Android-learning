@@ -1,0 +1,36 @@
+package com.example.listviewsample;
+public class LazyAdapter {
+    private String imageId;
+    private int transfers;
+    private String player_name;
+    private String team_name;
+ 
+    public LazyAdapter(String imageId, String name, String tname,int transfers) {
+        this.imageId = imageId;
+        this.player_name = name;
+        this.team_name=tname ;
+        this.transfers=transfers;
+    }
+    public String getImageId() {
+        return imageId;
+    }
+    public void setImageId(String imageId) {
+        this.imageId = imageId;
+    }
+    public String getTname() {
+        return team_name;
+    }
+    public void setTname(String tname) {
+        this.team_name = tname;
+    }
+    public String getPname() {
+        return player_name;
+    }
+    public void setPname(String name) {
+        this.player_name = name;
+    }
+    @Override
+    public String toString() {
+        return player_name + "\n" + team_name;
+    }
+}

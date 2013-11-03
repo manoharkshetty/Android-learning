@@ -4,9 +4,9 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+ 		<uses-sdk
+    		android:minSdkVersion="15"
+    		android:targetSdkVersion="20" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <instrumentation android:name="android.test.InstrumentationTestRunner"
+    					android:targetPackage="com.example.prefernces.MainActivity"
+   						 android:label="TestMain" />
+        <uses-library android:name="android.test.runner" />
     </application>
 
 </manifest>

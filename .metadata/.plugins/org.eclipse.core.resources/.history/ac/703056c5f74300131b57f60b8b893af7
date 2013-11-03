@@ -1,0 +1,16 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import com.example.listviewsample.LazyAdapter;
+
+
+public class HashMaps {
+	public Map<Integer, LazyAdapter> leaugeData = new HashMap<Integer, LazyAdapter>();
+    
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
