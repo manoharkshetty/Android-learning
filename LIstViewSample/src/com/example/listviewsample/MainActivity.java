@@ -6,7 +6,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
 import com.example.listviewsample.R;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -17,6 +16,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -30,16 +30,14 @@ public class MainActivity extends Activity implements
         OnItemClickListener {
 	 public TabHost myTabHost;
  
-    public static final String[] titles = new String[] { "Strawberry",
-            "Banana", "Orange", "Mixed" };
+    public static final String[] playerNames = new String[] { "Mohith Mehta","Lokesh Chauhan","Avinash Bhandari",
+    	"Ravindra Kumar","Kedar Shiroor","Sanal Nair","Utkarsh Rathore","Karthik Viswanathan"};
  
-    public static final String[] descriptions = new String[] {
-            "It is an aggregate accessory fruit",
-            "It is the largest herbaceous flowering plant", "Citrus Fruit",
-            "Mixed Fruits" };
- 
-    public static final Integer[] images = { R.drawable.michael,
-            R.drawable.michael, R.drawable.michael, R.drawable.michael };
+    public static final String[] teamNames = new String[] {
+    	"The Bulldozers","Jhaaduwale","chasers_11","Test","King Julian's Lemurs",
+    	"CrimeMasterGogo","Doppelganger","Tester"};
+    public static final Integer[] transfers={4,5,5,5,5,5,5,30};
+    public static final Integer[] points={4057,3793,3611,3442,2668,2364,943,0};
  
    public ListView listView;
     public List<LazyAdapter> rowItems;
@@ -64,21 +62,22 @@ public class MainActivity extends Activity implements
     	        myTabHost.addTab(spec);
     	 
     	// otherwise :
-    	myTabHost.addTab(myTabHost.newTabSpec("tab_inser").setIndicator(null,getResources().getDrawable(R.drawable.icons)).setContent(R.id.Onglet2));
+    	myTabHost.addTab(myTabHost.newTabSpec("tab_creation").setIndicator(null,getResources().getDrawable(R.drawable.icons)).setContent(R.id.Onglet2));
     	 
-    	myTabHost.addTab(myTabHost.newTabSpec("tab_affiche").setIndicator(null,getResources().getDrawable(R.drawable.icons)).setContent(R.id.Onglet3));
+    	myTabHost.addTab(myTabHost.newTabSpec("tab_creation").setIndicator(null,getResources().getDrawable(R.drawable.icons)).setContent(R.id.Onglet3));
     	
-    	myTabHost.addTab(myTabHost.newTabSpec("tab_affiche").setIndicator(null,getResources().getDrawable(R.drawable.icons)).setContent(R.id.Onglet3));
+    	myTabHost.addTab(myTabHost.newTabSpec("tab_creation").setIndicator(null,getResources().getDrawable(R.drawable.icons)).setContent(R.id.Onglet3));
     	          
     	    
     
  
         rowItems = new ArrayList<LazyAdapter>();
-        for (int i = 0; i < titles.length; i++) {
-            LazyAdapter item = new LazyAdapter(images[i], titles[i], descriptions[i]);
+        for (int i = 0; i < playerNames.length; i++) {
+            LazyAdapter item = new LazyAdapter(R.drawable.michael, playerNames[i], teamNames[i],transfers[i],points[i],i+1);
             rowItems.add(item);
-            Log.i("msg", titles[i]);
+           
         }
+        
 
         listView = (ListView) findViewById(R.id.list);
         CustomAdapter adapter = new CustomAdapter(this,
@@ -97,4 +96,11 @@ public class MainActivity extends Activity implements
         toast.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
         toast.show();
     }
+
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+  MenuInflater inflater = getMenuInflater();
+  inflater.inflate(R.menu.main, menu);
+  return true;
+} 
 }

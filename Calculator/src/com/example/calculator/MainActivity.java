@@ -28,47 +28,27 @@ public class MainActivity extends Activity {
 		num2view=(TextView) findViewById(R.id.num2);
 		addview = (Button) findViewById(R.id.add);
 		resultview = (TextView) findViewById(R.id.res);
+
+		addview.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
 		try {
-		  
-			String s=num1view.getText().toString();
-			num1=new Integer(s).intValue();
+		  String num=num1view.getText().toString();
+		  num1=Integer.parseInt(num);
+			String s=num2view.getText().toString();
+			num2=Integer.parseInt(s);
+			result=num1+num2;
+			String res=Integer.toString(result);
+			resultview.setText(res);
 		} catch (NumberFormatException e) {
 		    Log.i("err","cant parse");
 		}
 		
-		try {
-			String s2=num2view.getText().toString();
-			
-			num2= new Integer(s2).intValue();
-			  
-			
-		} catch (NumberFormatException e) {
-		    Log.i("err","cant parse2");
-		}
-		addview.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				result = num1 + num2;
-				
-				
-				resultview.setText("sum is:" +result);
-
 			}
 		});
-		subview=(Button) findViewById(R.id.sub);
-		subview.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				result=num1-num2;
-				resultview.setText("difference is:" + result);
-				
-			}
 		
-		});
+			
 	
 	}
 

@@ -1,14 +1,19 @@
 package com.example.listviewsample;
 public class LazyAdapter {
     private int imageId;
-   
-    private String title;
-    private String desc;
+    private int transfers;
+    private int points;
+    private int pos;
+    private String playerName;
+    private String teamName;
  
-    public LazyAdapter(int imageId, String title, String desc) {
+    public LazyAdapter(int imageId, String pname, String tname,int trans,int points,int pos) {
         this.imageId = imageId;
-        this.title = title;
-        this.desc=desc ;
+        this.playerName= pname;
+        this.teamName=tname ;
+        this.transfers=trans;
+        this.points=points;
+        this.pos=pos;
        
     }
     public int getImageId() {
@@ -17,21 +22,38 @@ public class LazyAdapter {
     public void setImageId(int imageId) {
         this.imageId = imageId;
     }
-    public String getTitle() {
-    	System.out.println(title);
-        return title;
+    public String getPlayerName() {
+    	
+        return playerName;
     }
-    public void setTitle(String title) {
-        this.title = title;
+    public void setPlayerName(String title) {
+        this.playerName= title;
     }
-    public String getDesc() {
-        return desc;
+    public String getTeamName() {
+        return teamName;
     }
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setTeamName(String tName) {
+        this.teamName = tName;
     }
+    public String getTrans() {
+        return transfers + " transfers";
+    }
+    public void setTrans(int trans) {
+        this.transfers = trans;
+    }
+    public String getPoints() {
+        return "" + points;
+    }
+    public void setPoints(int points ) {
+        this.points = points;
+    }
+    public String getPos() {
+        return "" + pos;
+    }
+   
+   
     @Override
     public String toString() {
-        return title + "\n" + desc;
+        return playerName + "\n" + teamName;
     }
 }

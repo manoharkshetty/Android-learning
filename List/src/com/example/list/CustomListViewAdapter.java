@@ -1,11 +1,16 @@
 package com.example.list;
 
 
+import java.io.IOException;
+import java.net.URL;
 import java.util.List;
+
 import com.example.list.*;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +49,11 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
            holder.imageView = (ImageView) convertView.findViewById(R.id.icon);
            convertView.setTag(holder);
        } else
+    	   
            holder = (ViewHolder) convertView.getTag();
+      
+
+	
 
        holder.txtDesc.setText(rowItem.getDesc());
        holder.txtTitle.setText(rowItem.getTitle());

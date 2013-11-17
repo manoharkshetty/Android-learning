@@ -1,0 +1,40 @@
+package com.example.planmytrip;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private static String[] title={"MY TRIPS","MORE"};
+	private static String[] desc={"past and planned trips","settings and manage accounts"};
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.planner);
+		LinearLayout lo=(LinearLayout) findViewById(R.id.main);
+		LayoutInflater li=getLayoutInflater();
+		for(int i=0;i<title.length;i++){
+			
+		
+		View view=li.inflate(R.layout.planner, null, false);
+		TextView titleView=(TextView) view.findViewById(R.id.title);
+		TextView descView=(TextView) view.findViewById(R.id.desc);
+		
+		titleView.setText(title[i]);
+		descView.setText(desc[i]);
+		
+		lo.addView(view);
+	
+		}
+		
+		
+		
+	}
+
+
+}

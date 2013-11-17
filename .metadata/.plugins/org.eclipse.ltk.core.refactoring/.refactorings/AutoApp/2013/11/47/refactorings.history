@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extracts string &apos;Call Us to Schedule An Appointment&apos; into R.string.call_us_to_schedule_an_appointment" description="Extracts string &apos;Call Us to Schedule An Appointment&apos; into R.string.call_us_to_schedule_an_appointment" file="/AutoApp/res/layout/form.xml" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="EDIT_SOURCE" proj="/AutoApp" rplc-all-java="false" rplc-all-xml="false" sel-end="3870" sel-start="3822" stamp="1384702786318" tok-esc="Call Us to Schedule An Appointment" xml-attr-name="android:text"/>
+</session>

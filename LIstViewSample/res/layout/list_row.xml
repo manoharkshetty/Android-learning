@@ -23,6 +23,7 @@
             android:src="@drawable/michael"/>
 
         	<TextView
+        	    android:id="@+id/pos"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:background="@drawable/number_bg"
@@ -43,7 +44,7 @@
         android:layout_alignTop="@+id/thumbnail"
         android:layout_toRightOf="@+id/thumbnail"
         android:text="@string/transformers"
-        android:textColor="#0000ff"
+        android:textColor="#5555cc"
         android:textSize="15sp"
         android:textStyle="bold"
         android:typeface="sans" />
@@ -59,14 +60,12 @@
         android:layout_toRightOf="@+id/thumbnail"
         android:text="@string/john_doe"
         android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textSize="13sp" />
  
     <!-- Rightend Duration -->
     
  
      <!-- Rightend Arrow -->
-
-  
 
      <TextView
          android:id="@+id/trans"
@@ -74,15 +73,16 @@
          android:layout_height="wrap_content"
          android:layout_alignLeft="@+id/desc"
          android:layout_below="@+id/desc"
-         android:text="@string/transaction1" />
+         android:text="@string/transaction1"
+         android:textSize="12sp" />
 
      <TextView
-         android:id="@+id/duration"
+         android:id="@+id/points"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignParentRight="true"
          android:layout_alignTop="@+id/desc"
-         android:layout_marginLeft="21dp"
+       
          android:paddingRight="20dp"
          android:layout_toRightOf="@+id/title"
          android:gravity="right"

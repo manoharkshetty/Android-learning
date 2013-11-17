@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:id="@+id/list_row" >
+
+    <LinearLayout
+        android:id="@+id/imglayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+
+ 	  <ImageView
+ 	      android:id="@+id/list_image"
+ 	      android:layout_width="50dip"
+ 	      android:layout_height="40dip"
+ 	      android:layout_margin="5dp"
+ 	      android:src="@drawable/michael" />
+
+ 	  <TextView
+        	    android:id="@+id/pos"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/number_bg"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="-15dp"
+            
+            android:text="@string/_1" />
+         
+     </LinearLayout>
+     <LinearLayout 
+         android:orientation="vertical"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+   
+
+        	
+ 
+   
+    
+ 
+    <!-- Title Of Song-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:text="@string/transformers"
+        android:textColor="#5555cc"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+ 
+    <!-- Artist Name -->
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:paddingBottom="2dp"
+        android:text="@string/john_doe"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+ 
+    <!-- Rightend Duration -->
+    
+ 
+     <!-- Rightend Arrow -->
+
+     <TextView
+         android:id="@+id/trans"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/desc"
+         android:layout_below="@+id/desc"
+         android:text="@string/transaction1"
+         android:textSize="12sp" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:padding="10dp"
+         android:paddingLeft="40dp"
+         android:layout_marginLeft="20dp"
+         android:paddingRight="20dp" >
+
+         <TextView
+             android:id="@+id/points"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="right"
+             android:paddingLeft="20dp"
+             android:text="@string/_3000"
+             android:textColor="#3e3e3e"
+             android:textSize="25sp"
+             android:textStyle="bold" />
+     </LinearLayout>
+ 
+</LinearLayout>
