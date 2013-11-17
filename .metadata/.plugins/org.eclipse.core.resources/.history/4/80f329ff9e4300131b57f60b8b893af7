@@ -1,9 +1,0 @@
-package com.example.tabhost;
-
-public class FlimStarInformationModal extends Java.Lang.Object
-{
-	public string FilmStarName {get;set;}
-	public int FlimStarImageID {get;set;}
-	public string FilmStarBio1 {get;set;}
-	public string FilmStarBio2 {get;set;}
-}
