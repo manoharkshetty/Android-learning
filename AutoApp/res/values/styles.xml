@@ -17,5 +17,6 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <color name="blue">#0000ff</color>
+    <color name="white">#ffffff</color>
 
 </resources>

@@ -14,9 +14,10 @@ public class MainActivity extends Activity {
 		
 		SQLiteDatabase db=openOrCreateDatabase("Mydb", MODE_PRIVATE, null);
 		db.execSQL("create table if not exists myTable (fname varchar,lname varchar);");
-		db.execSQL("insert into  myTable values('manohar','shetty');");
+		db.execSQL("insert into  myTable values('shreedhar','shetty');");
+		 
 		db.close();
-
+		
 	}
 
 }

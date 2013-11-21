@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -24,18 +25,16 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MainActivity<AsyncResponse> extends ListActivity {
+public class MainActivity extends Activity {
 	private AsyncHttpClient client;
-	   static JSONObject jObj = null;
-	    static String json = "";
-	    private HttpResponse response;
-	    private TextView text;
+	  
 	
 	
-	private String url="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20feed%20where%20url%20%3D%20%22http%3A%2F%2Ffeeds.feedburner.com%2Fnettuts%22&format=json&diagnostics=true";
+	private String url="http://10.0.2.2/serverconnectiondemo/serverconnection.php";
+	RequestParams params=new RequestParams();
+
 	
 	
-	private String[] objects={"manu","shree","ravi","rakesh"};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,22 +44,32 @@ public class MainActivity<AsyncResponse> extends ListActivity {
 		
 	
 	client=new AsyncHttpClient();
+	params.put("fname", "ravindra");
+	params.put("lname", "kumar");
+	params.put("email", "ravidsrk@gmail.com");
+	client.post(url, params, new JsonHttpResponseHandler(){
+		  @Override
+			public void onSuccess(JSONArray resp) {
+		Log.i("post","success");
+		  }
+		  @Override
+		public void onFailure(Throwable arg0) {
+			// TODO Auto-generated method stub
+				Log.i("post","failed");
+		}
+	});
 	client.get(url,null, new JsonHttpResponseHandler(){
 	
 		  @Override
-		public void onSuccess(JSONObject resp) {
+		public void onSuccess(JSONArray resp) {
 			
 			  try {
-				 JSONObject query=resp.getJSONObject("query");
-				 JSONObject results=query.getJSONObject("results");
-				 JSONArray item=results.getJSONArray("item");
-				 for(int i=0;i<item.length();i++){
-				 JSONObject obj= (JSONObject) item.get(i);
-				 final String title=obj.getString("title");
+				  JSONObject obj=resp.getJSONObject(0);
+				 String str=obj.getString("email");
+				 Log.i("ses", str);
+				 
 				
-				 Log.i("title",title);
-				
-				 }
+				 
 			} catch (JSONException e) {
 				Log.i("err","cant parse");
 				// TODO Auto-generated catch block

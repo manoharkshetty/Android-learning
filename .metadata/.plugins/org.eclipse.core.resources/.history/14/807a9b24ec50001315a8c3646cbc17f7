@@ -1,0 +1,22 @@
+package com.example.autoapp;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class BookAnAppointment extends Activity{
+	public int daySelected,monthSelected,yearSelected,hourSelected,minuteSelected;
+	public int mDay,mMonth,mYear,mHour,mMinute;
+	private Button bDate,bTime; 
+	static final int DATE_DIALOG_ID=0;
+	static final int TIME_DIALOG_ID=1;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.form);
+		bDate=(Button) findViewById(R.id.date);
+		bTime=(Button) findViewById(R.id.time);
+
+}
+}

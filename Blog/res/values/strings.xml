@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="textview">TextView</string>
     <string name="description_about_the_person">description about the person</string>
+    <string name="hello">hello</string>
 
 </resources>

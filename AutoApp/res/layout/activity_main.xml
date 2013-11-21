@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    >
 
     <LinearLayout
         android:id="@+id/main"
@@ -23,9 +24,10 @@
              >
 
             <ImageView
+                android:id="@+id/img"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
-                android:src="@drawable/michael" />
+                android:src="@drawable/option1" />
 
         </LinearLayout>
         <LinearLayout 
@@ -41,6 +43,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/discounts_and_gifts"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <TextView
@@ -48,6 +51,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/share_our_work_on_facebook"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
             
         </LinearLayout>
