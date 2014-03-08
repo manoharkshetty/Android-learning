@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1388167929115" transient="false" version="3.0">
+<site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
+<feature id="org.eclipse.rcp.configuration" url="features/org.eclipse.rcp.configuration_1.0.0.v20130803-1556/" version="1.0.0.v20130803-1556">
+</feature>
+<feature id="org.eclipse.equinox.p2.core.feature" url="features/org.eclipse.equinox.p2.core.feature_1.2.100.v20130918-2133/" version="1.2.100.v20130918-2133">
+</feature>
+<feature id="com.android.ide.eclipse.traceview" url="features/com.android.ide.eclipse.traceview_22.2.1.v201309180102-833290/" version="22.2.1.v201309180102-833290">
+</feature>
+<feature id="com.android.ide.eclipse.hierarchyviewer" url="features/com.android.ide.eclipse.hierarchyviewer_22.2.1.v201309180102-833290/" version="22.2.1.v201309180102-833290">
+</feature>
+<feature id="org.eclipse.e4.rcp.source" url="features/org.eclipse.e4.rcp.source_1.3.0.v20130918-1640/" version="1.3.0.v20130918-1640">
+</feature>
+<feature id="org.eclipse.equinox.p2.discovery.feature" url="features/org.eclipse.equinox.p2.discovery.feature_1.0.100.v20130913-1233/" version="1.0.100.v20130913-1233">
+</feature>
+<feature id="org.eclipse.equinox.p2.extras.feature.source" url="features/org.eclipse.equinox.p2.extras.feature.source_1.2.0.v20130918-2133/" version="1.2.0.v20130918-2133">
+</feature>
+<feature id="org.eclipse.platform" url="features/org.eclipse.platform_4.4.0.v20130918-2133/" version="4.4.0.v20130918-2133">
+</feature>
+<feature id="com.android.ide.eclipse.adt" url="features/com.android.ide.eclipse.adt_22.2.1.v201309180102-833290/" version="22.2.1.v201309180102-833290">
+</feature>
+<feature id="org.eclipse.help.source" url="features/org.eclipse.help.source_2.0.0.v20130918-2000/" version="2.0.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.help" plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_2.0.0.v20130918-2000/" version="2.0.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.emf.ecore" url="features/org.eclipse.emf.ecore_2.10.0.v20130911-1052/" version="2.10.0.v20130911-1052">
+</feature>
+<feature id="org.eclipse.rcp.source" url="features/org.eclipse.rcp.source_4.4.0.v20130918-2000/" version="4.4.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.pde.source" url="features/org.eclipse.pde.source_3.10.0.v20130918-2000/" version="3.10.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.equinox.p2.rcp.feature" url="features/org.eclipse.equinox.p2.rcp.feature_1.2.0.v20130918-2133/" version="1.2.0.v20130918-2133">
+</feature>
+<feature id="org.eclipse.equinox.p2.user.ui" url="features/org.eclipse.equinox.p2.user.ui_2.2.0.v20130918-2133/" version="2.2.0.v20130918-2133">
+</feature>
+<feature id="org.eclipse.cvs" url="features/org.eclipse.cvs_1.4.0.v20130918-2000/" version="1.4.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.epp.mpc" plugin-identifier="org.eclipse.epp.mpc.ui" url="features/org.eclipse.epp.mpc_1.2.1.I20131002-1306/" version="1.2.1.I20131002-1306">
+</feature>
+<feature id="com.android.ide.eclipse.gldebugger" url="features/com.android.ide.eclipse.gldebugger_22.2.1.v201309180102-833290/" version="22.2.1.v201309180102-833290">
+</feature>
+<feature id="org.eclipse.equinox.p2.rcp.feature.source" url="features/org.eclipse.equinox.p2.rcp.feature.source_1.2.0.v20130918-2133/" version="1.2.0.v20130918-2133">
+</feature>
+<feature id="com.google.i18n.inkstone.eclipse.localization" url="features/com.google.i18n.inkstone.eclipse.localization_1.0.1.201309251931/" version="1.0.1.201309251931">
+</feature>
+<feature id="org.eclipse.jdt.source" url="features/org.eclipse.jdt.source_3.10.0.v20130918-2000/" version="3.10.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.epp.package.common.feature" url="features/org.eclipse.epp.package.common.feature_2.1.0.20130817-1431/" version="2.1.0.20130817-1431">
+</feature>
+<feature id="org.eclipse.egit" url="features/org.eclipse.egit_3.1.0.201310021548-r/" version="3.1.0.201310021548-r">
+</feature>
+<feature id="com.android.ide.eclipse.ddms" url="features/com.android.ide.eclipse.ddms_22.2.1.v201309180102-833290/" version="22.2.1.v201309180102-833290">
+</feature>
+<feature id="org.eclipse.jgit" url="features/org.eclipse.jgit_3.1.0.201310021548-r/" version="3.1.0.201310021548-r">
+</feature>
+<feature id="org.eclipse.rcp" url="features/org.eclipse.rcp_4.4.0.v20130918-2000/" version="4.4.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.jdt" url="features/org.eclipse.jdt_3.10.0.v20130918-2000/" version="3.10.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.cvs.source" url="features/org.eclipse.cvs.source_1.4.0.v20130918-2000/" version="1.4.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.e4.rcp" url="features/org.eclipse.e4.rcp_1.3.0.v20130918-1640/" version="1.3.0.v20130918-1640">
+</feature>
+<feature id="org.eclipse.equinox.p2.user.ui.source" url="features/org.eclipse.equinox.p2.user.ui.source_2.2.0.v20130918-2133/" version="2.2.0.v20130918-2133">
+</feature>
+<feature id="org.eclipse.emf.common" url="features/org.eclipse.emf.common_2.10.0.v20130911-1052/" version="2.10.0.v20130911-1052">
+</feature>
+<feature id="org.eclipse.equinox.p2.core.feature.source" url="features/org.eclipse.equinox.p2.core.feature.source_1.2.100.v20130918-2133/" version="1.2.100.v20130918-2133">
+</feature>
+<feature id="org.eclipse.platform.source" url="features/org.eclipse.platform.source_4.4.0.v20130918-2133/" version="4.4.0.v20130918-2133">
+</feature>
+<feature id="org.eclipse.pde" url="features/org.eclipse.pde_3.10.0.v20130918-2000/" version="3.10.0.v20130918-2000">
+</feature>
+<feature id="org.eclipse.epp.package.standard.feature" plugin-identifier="org.eclipse.epp.package.standard" url="features/org.eclipse.epp.package.standard.feature_2.1.0.20131001-0516/" version="2.1.0.20131001-0516">
+</feature>
+<feature id="org.eclipse.equinox.p2.extras.feature" url="features/org.eclipse.equinox.p2.extras.feature_1.2.0.v20130918-2133/" version="1.2.0.v20130918-2133">
+</feature>
+</site>
+</config>

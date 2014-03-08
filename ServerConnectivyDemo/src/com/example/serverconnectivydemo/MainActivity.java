@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
 		}
 		
 		*/
-		String url="http://10.0.2.2/serverconnectiondemo/serverconnection.php";
+		String url="http://10.0.2.2/serverconnectiondemo/schedule.json";
 		AsyncHttpClient client=new AsyncHttpClient();
 		client.get(url, new JsonHttpResponseHandler(){
 			
@@ -56,6 +56,7 @@ public class MainActivity extends Activity {
 				public void onSuccess(JSONArray resp) {
 					
 					  Log.i("sss"," parsed");
+					  Log.i("sss",resp.toString());
 			  }
 			
 		});

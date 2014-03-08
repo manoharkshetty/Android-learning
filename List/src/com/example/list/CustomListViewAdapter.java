@@ -49,12 +49,9 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
            holder.imageView = (ImageView) convertView.findViewById(R.id.icon);
            convertView.setTag(holder);
        } else
-    	   
-           holder = (ViewHolder) convertView.getTag();
-      
-
-	
-
+    	    holder = (ViewHolder) convertView.getTag();
+       
+       
        holder.txtDesc.setText(rowItem.getDesc());
        holder.txtTitle.setText(rowItem.getTitle());
        holder.imageView.setImageResource(rowItem.getImageId());

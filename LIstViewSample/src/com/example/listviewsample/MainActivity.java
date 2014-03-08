@@ -12,7 +12,9 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import android.app.Activity;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -41,6 +43,8 @@ public class MainActivity extends Activity implements
  
    public ListView listView;
     public List<LazyAdapter> rowItems;
+    public String[] playername=new String[10];
+    int i=0;
    
     
     @Override
@@ -69,11 +73,18 @@ public class MainActivity extends Activity implements
     	myTabHost.addTab(myTabHost.newTabSpec("tab_creation").setIndicator(null,getResources().getDrawable(R.drawable.icons)).setContent(R.id.Onglet3));
     	          
     	    
-    
- 
+    	
+    	Cursor cursor = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
+	    while (cursor.moveToNext()) {
+	    	
+	         playername[i++] = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+	        if(i==playerNames.length)
+	        	break;
+	   
+	    }
         rowItems = new ArrayList<LazyAdapter>();
         for (int i = 0; i < playerNames.length; i++) {
-            LazyAdapter item = new LazyAdapter(R.drawable.michael, playerNames[i], teamNames[i],transfers[i],points[i],i+1);
+            LazyAdapter item = new LazyAdapter(R.drawable.michael, playername[i], teamNames[i],transfers[i],points[i],i+1);
             rowItems.add(item);
            
         }

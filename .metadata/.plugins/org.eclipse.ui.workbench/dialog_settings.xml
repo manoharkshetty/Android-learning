@@ -5,27 +5,27 @@
 	<section name="FileSystemImportWizard">
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="841" key="dialogWidth"/>
-		<item value="468" key="dialogHeight"/>
+		<item value="853" key="dialogWidth"/>
+		<item value="480" key="dialogHeight"/>
 		<list key="orderedProviders">
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
-			<item value="fil"/>
-			<item value="lo"/>
 			<item value="log"/>
+			<item value="lo"/>
+			<item value="fil"/>
 			<item value="con"/>
 		</list>
 		<list key="orderedElements">
-			<item value="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
 			<item value="com.android.ide.eclipse.ddms.views.LogCatView"/>
+			<item value="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
 			<item value="org.eclipse.ui.console.ConsoleView"/>
 		</list>
 		<list key="textEntries">
-			<item value="1"/>
 			<item value="2"/>
+			<item value="1"/>
 			<item value="1"/>
 		</list>
 	</section>
@@ -33,19 +33,19 @@
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 		<item value="7" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="ZipFileImportWizard">
-		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
-		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="/home/manu/Downloads/ExampleTestProject_v4.3.zip"/>
-			<item value="/home/manu/Downloads/AndroidCalculator.zip"/>
-		</list>
-	</section>
 	<section name="NewWizardAction">
 		<item value="com.android.ide.eclipse.editors.wizards.NewActivityWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.android.ide.eclipse.wizards.category"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/manu/Downloads/ExampleTestProject_v4.3.zip"/>
+			<item value="/home/manu/Downloads/AndroidCalculator.zip"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

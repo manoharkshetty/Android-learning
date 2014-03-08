@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:debuggable="true"
         android:label="@string/american_eagle_auto_body"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" android:logo="@drawable/aeab" android:icon="@drawable/aeab">
         <activity
             android:name="com.example.autoapp.MainActivity"
             android:label="@string/app_name" >

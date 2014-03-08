@@ -29,17 +29,17 @@ public  class MainActivity extends Activity implements OnClickListener {
 		LayoutInflater inflater=getLayoutInflater();
 		head.setBackgroundResource(R.drawable.bg1);
 			
-		for(int i=0;i<title.length;i++){
+		for(int i=0;i<20;i++){
 			View view = inflater.inflate(R.layout.activity_main, null, false);
 	        TextView title = (TextView) view.findViewById(R.id.title);
 	        TextView desc = (TextView) view.findViewById(R.id.desc);
 	        ImageView iv=(ImageView) view.findViewById(R.id.img);
-	        title.setText(this.title[i]);
-	        desc.setText(this.desc[i]);
+	        title.setText(this.title[1]);
+	        desc.setText(this.desc[1]);
 	       
 
 	        
-	        iv.setImageResource(image[i]);
+	        iv.setImageResource(image[1]);
 	        
 	        view.setId(i);
 	        
